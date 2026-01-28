@@ -1,0 +1,68 @@
+{
+  "name": "root",
+  "children": [
+    { "name": ".github", "type": "folder" },
+    {
+      "name": "dist",
+      "type": "folder",
+      "children": [
+        { "name": "assets", "type": "folder" },
+        { "name": "index.html", "type": "file" },
+        { "name": "vite.svg", "type": "file" }
+      ]
+    },
+    { "name": "node_modules", "type": "folder" },
+    { "name": "public", "type": "folder" },
+    {
+      "name": "src",
+      "type": "folder",
+      "children": [
+        {
+          "name": "features",
+          "type": "folder",
+          "children": [
+            {
+              "name": "Home",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "styles",
+                  "type": "folder",
+                  "children": [{ "name": "Home.module.css", "type": "file" }]
+                },
+                { "name": "index.tsx", "type": "file" }
+              ]
+            },
+            {
+              "name": "NotFound",
+              "type": "folder",
+              "children": [{ "name": "index.tsx", "type": "file" }]
+            },
+            {
+              "name": "FileExplore",
+              "type": "folder",
+              "children": [
+                { "name": "file-structure.json", "type": "file" },
+                { "name": "index.tsx", "type": "file" },
+                { "name": "FileExplore.module.css", "type": "file" }
+              ]
+            }
+          ]
+        },
+        { "name": "index.tsx", "type": "file" },
+        { "name": "App.tsx", "type": "file" },
+        { "name": "main.tsx", "type": "file" },
+        { "name": "vite-env.d.ts", "type": "file" }
+      ]
+    },
+    { "name": ".gitignore", "type": "file" },
+    { "name": "ACTIONS.md", "type": "file" },
+    { "name": "DEPLOYMENT.md", "type": "file" },
+    { "name": "index.html", "type": "file" },
+    { "name": "package-lock.json", "type": "file" },
+    { "name": "package.json", "type": "file" },
+    { "name": "README.md", "type": "file" },
+    { "name": "tsconfig.json", "type": "file" },
+    { "name": "vite.config.ts", "type": "file" }
+  ]
+}

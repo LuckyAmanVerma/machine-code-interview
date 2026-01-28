@@ -1,6 +1,6 @@
 import React from 'react';
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
-import { NotFound,Home } from '@/features';
+import { NotFound,Home,FileExplorer } from '@/features';
 
 
 const App: React.FC = () => {
@@ -9,7 +9,7 @@ const App: React.FC = () => {
       <div>
         <h1>Machine Code Interview</h1>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<FileExplorer />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

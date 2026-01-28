@@ -1,0 +1,87 @@
+.container {
+  width: 280px;
+  border-right: 1px solid #e6e6e6;
+  background: #fafafa;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-size: 13px;
+  color: #222;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  background: linear-gradient(180deg, rgba(0,0,0,0.02), transparent);
+}
+
+.tree {
+  padding: 8px 0;
+  overflow: auto;
+  flex: 1;
+}
+
+.node {
+  user-select: none;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  height: 28px;
+  line-height: 1;
+}
+
+.chevron {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0 6px;
+  font-size: 12px;
+  margin-right: 4px;
+  outline: none;
+}
+
+.placeholder {
+  display: inline-block;
+  width: 22px;
+  margin-right: 4px;
+}
+
+.folderLabel, .fileLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.folderLabel:hover, .fileLabel:hover {
+  background: rgba(0,0,0,0.03);
+}
+
+.icon {
+  width: 18px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 190px;
+}
+
+.children {
+  margin-top: 2px;
+}
+
+.childElement {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
