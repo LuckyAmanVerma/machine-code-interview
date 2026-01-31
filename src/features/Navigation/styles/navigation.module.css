@@ -1,0 +1,36 @@
+@import '@/globalCSS/tokens/breakpoint.css';
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  background-color: #0d1117;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navList {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navList li {
+  padding: var(--space-md);
+}
+
+@media (--breakpoint-desktop) {
+  .navList li {
+    padding: var(--space-sm);
+  }
+}
+
+@media (--breakpoint-tablet) {
+  .navList li {
+    padding: var(--space-xs);
+  }
+}
+

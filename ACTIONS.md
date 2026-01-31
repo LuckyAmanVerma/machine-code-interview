@@ -36,6 +36,9 @@ This document outlines the actions, workflows, and guidelines for the "Machine C
 - **Type Definitions**
   - TypeScript types and interfaces should be defined in `src/types/index.ts` for better type safety and code clarity.
 
+# AI Code Generation Command
+Generate frontend code that adheres to Core Web Vitals, SEO best practices, semantic HTML, and Web Accessibility (keyboard navigation, screen reader support).
+
 ## Version Control
 - **Branching Strategy**
   - Use feature branches for new features or bug fixes. The naming convention should be `feature/<feature-name>` or `bugfix/<bug-name>`.

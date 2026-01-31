@@ -6,13 +6,10 @@ import { NotFound,Home,FileExplorer } from '@/features';
 const App: React.FC = () => {
   return (
     <Router>
-      <div>
-        <h1>Machine Code Interview</h1>
         <Routes>
-          <Route path="/" element={<FileExplorer />} />
+          <Route path="/" element={<Home />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </div>
     </Router>
   );
 };

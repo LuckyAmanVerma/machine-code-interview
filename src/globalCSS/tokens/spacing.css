@@ -1,0 +1,16 @@
+:root {
+  /* Extra small to large */
+  --space-xxs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.25rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-xxl: 4rem;
+
+  /* Layout-specific spacing */
+  --space-gap-sm: 0.75rem;
+  --space-gap-md: 1.5rem;
+  --space-gap-lg: 2.5rem;
+
+}
