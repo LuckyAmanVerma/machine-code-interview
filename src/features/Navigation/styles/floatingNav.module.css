@@ -1,0 +1,43 @@
+/* FloatingNav.module.css */
+
+.navbar {
+  position: fixed;
+  top: var(--space-md);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.moreBtn:hover,
+.moreBtn:focus {
+  background: var(--color-fab-hover);
+  outline: none;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar .moreBtn {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 3rem;
+  color: var(--color-fab-icon);
+  background-color: var(--color-fab-bg);
+  font-size: var(--font-large);
+  box-sizing: border-box;
+  transition: box-shadow 0.2s ease;
+  will-change: transform;
+
+}
+
+.navbar .navlist {
+  margin-top: var(--space-sm);
+  background-color: var(--color-bg-secondary);
+  padding:var(--space-sm);
+  border-radius:var(--space-sm);
+  min-width:60vw;
+}
+
+.navlist li {
+  padding: var(--space-sm);
+}

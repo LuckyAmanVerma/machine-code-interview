@@ -1,0 +1,88 @@
+:root {
+    /* =========================
+     BASE BACKGROUNDS
+     ========================= */
+
+     --color-app:#2c3e50;
+    --color-bg-primary: #0b0f14;
+    /* main app background */
+    --color-bg-secondary: #111827;
+    /* cards, panels */
+    --color-bg-muted: #1f2933;
+    /* subtle sections */
+
+    /* =========================
+     PRIMARY (Brand / Action)
+     ========================= */
+    --color-primary: #3b82f6;
+    --color-primary-hover: #58a6ff;
+    --color-primary-active: #1d4ed8;
+    --color-primary-disabled: #1e3a8a;
+
+    /* =========================
+     SECONDARY (Neutral Actions)
+     ========================= */
+    --color-secondary: #9ca3af;
+    --color-secondary-hover: #d1d5db;
+    --color-secondary-active: #f3f4f6;
+    --color-secondary-disabled: #4b5563;
+
+    /* =========================
+     SUCCESS
+     ========================= */
+    --color-success: #22c55e;
+    --color-success-hover: #16a34a;
+    --color-success-active: #15803d;
+    --color-success-disabled: #14532d;
+
+    /* =========================
+     WARNING
+     ========================= */
+    --color-warning: #fbbf24;
+    --color-warning-hover: #f59e0b;
+    --color-warning-active: #d97706;
+    --color-warning-disabled: #78350f;
+
+    /* =========================
+     ERROR / DANGER
+     ========================= */
+    --color-danger: #ef4444;
+    --color-danger-hover: #dc2626;
+    --color-danger-active: #b91c1c;
+    --color-danger-disabled: #7f1d1d;
+
+    /* =========================
+     INFO
+     ========================= */
+    --color-info: #38bdf8;
+    --color-info-hover: #0ea5e9;
+    --color-info-active: #0284c7;
+    --color-info-disabled: #0c4a6e;
+
+    /* =========================
+     BORDERS & DIVIDERS
+     ========================= */
+    --color-border-default: #1f2937;
+    --color-border-hover: #374151;
+    --color-border-focus: #3b82f6;
+
+    /* =========================
+     TEXT COLORS
+     ========================= */
+    --color-text-primary: #e5e7eb;
+    --color-text-secondary: #9ca3af;
+    --color-text-muted: #6b7280;
+    --color-text-disabled: #4b5563;
+    --color-text-inverse: #020617;
+
+    /* =========================
+         FLOATING NAVIGATION
+         ========================= */
+    /* Floating Action Button */
+    --color-fab-bg: #111827;
+    --color-fab-hover: #1f2937;
+    --color-fab-active: #020617;
+    --color-fab-icon: #e5e7eb;
+    --color-fab-ring: #3b82f6;
+
+}

@@ -1,0 +1,5 @@
+@import "./navbar.css";
+body {
+    background-color:var(--color-app);
+}
+

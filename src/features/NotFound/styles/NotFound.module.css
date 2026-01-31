@@ -10,19 +10,19 @@
 }
 
 .title {
-  font-size: 6rem;
+  font-size: var(--font-single-title);
   font-weight: bold;
   color: #ff4d4f;
   margin: 0;
 }
 
 .message {
-  font-size: 1.5rem;
+  font-size: var(--font-xlarge);
   margin: 1rem 0;
 }
 
 .link {
-  font-size: 1rem;
+  font-size: var(--font-medium);
   color: #007bff;
   text-decoration: none;
   border: 1px solid #007bff;

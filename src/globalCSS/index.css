@@ -1,2 +1,3 @@
-@import './tokens/index.css';
 @import './atom/index.css';
+@import './tokens/index.css';
+@import './templates/index.css';

@@ -7,6 +7,6 @@ a {
 
 a:hover,
 a:focus {
-  color: #58a6ff;
+  color: var(--color-primary-hover);
   outline: none;
 }

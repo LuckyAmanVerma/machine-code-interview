@@ -1,5 +1,13 @@
 :root {
     --font-primary: 'Inter', sans-serif;
+    --font-xxsmall:0.50rem;
+    --font-xsmall:0.75rem;
+    --font-small: 0.875rem;
+    --font-medium: 1rem;
+    --font-large: 1.25rem;
+    --font-xlarge: 1.5rem;
+    --font-xxlarge:2rem;
+    --font-single-title:6rem;
 }
 
 body {
