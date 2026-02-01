@@ -1,0 +1,26 @@
+
+.buttonWrapper {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:var(--spacing-sm);
+}
+.carousel_btn {
+    border:none;
+    background-color:transparent;
+    font-size:var(--space-md);
+    width:var(--space-lg);
+    height:var(--space-lg);
+    color:var(--color-secondary);
+}
+.carousel_btn.active {
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
+}
+
+.slider {
+    display:none;
+}
+.slider.active {
+    display:block;
+}

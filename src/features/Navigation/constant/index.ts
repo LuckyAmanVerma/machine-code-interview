@@ -7,4 +7,12 @@ const sections:string[] = [
     'Personal',
   ];
 
-  export {sections};
+  const keySections = {
+    'about-me': 'About Me',
+    'working-experience': 'Working Experience',
+    'frontend-architecture': 'Frontend Architecture',
+    'fun-activities': 'Fun Activities',
+    'personal': 'Personal',
+  };
+
+  export {sections, keySections};

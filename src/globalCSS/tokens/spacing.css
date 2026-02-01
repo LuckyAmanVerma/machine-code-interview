@@ -8,9 +8,9 @@
   --space-xl: 3rem;
   --space-xxl: 4rem;
 
-  /* Layout-specific spacing */
+  /* Layout-specific spacing  Page Padding , margin  */
   --space-gap-sm: 0.75rem;
-  --space-gap-md: 1.5rem;
+  --space-gap-md: 1.5rem;  
   --space-gap-lg: 2.5rem;
 
 }

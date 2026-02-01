@@ -3,11 +3,15 @@
 .navbar {
   position: fixed;
   top: 0;
-  left:0;
+  left: 0;
   width: 100%;
-  background-color: #0d1117;
+  height: var(--nav-height, 56px);
+  display: flex;
+  align-items: center;
+  background-color: var(--color-bg-primary);
   z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px var(--color-border-default);
+  padding: 0 var(--space-md);
 }
 
 .navlist {
@@ -27,7 +31,7 @@
    border-bottom:2px solid #fff;
 }
 
-.navlist li:active {
+.navlist li.active {
  border-bottom:2px solid #fff;
  font-weight:700;
 }
