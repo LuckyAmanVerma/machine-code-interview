@@ -8,7 +8,8 @@
     "build:dev": "tsc && vite build --mode development",
     "build:prod": "tsc && vite build --mode production",
     "preview": "vite preview",
-    "deploy": "npm run build:prod && npx gh-pages -d dist"
+    "deploy": "npm run build:prod && npx gh-pages -d dist",
+    "publish": "npm run build:prod && npm run deploy"
   },
   "dependencies": {
     "react": "^18.2.0",

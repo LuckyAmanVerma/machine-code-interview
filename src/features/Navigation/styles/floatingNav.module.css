@@ -1,10 +1,8 @@
 /* FloatingNav.module.css */
 
 .navbar {
-  position: fixed;
+  position: relative;
   top: var(--space-md);
-  left: 50%;
-  transform: translateX(-50%);
   z-index: 1100;
 }
 
@@ -13,12 +11,9 @@
 .moreBtn:focus {
   background: var(--color-fab-hover);
   outline: none;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
-.navbar .moreBtn {
+.moreBtn {
   width: 3rem;
   height: 3rem;
   border-radius: 3rem;
@@ -28,17 +23,40 @@
   box-sizing: border-box;
   transition: box-shadow 0.2s ease;
   will-change: transform;
+  z-index: 1200;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
 
 }
 
 .navbar .navlist {
+  position:absolute;
   margin-top: var(--space-sm);
   background-color: var(--color-bg-secondary);
-  padding:var(--space-sm);
-  border-radius:var(--space-sm);
-  min-width:60vw;
+  padding: var(--space-sm);
+  border-radius: var(--space-sm);
+  min-width: 60vw;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .navlist li {
   padding: var(--space-sm);
+}
+
+.navlist li:hover {
+ border-left:2px solid #fff;
+}
+
+.navlist li.active {
+ border-left:2px solid #fff;
+ font-weight:700;
+}
+
+.navlist li:hover a {
+  color:var(--color-primary-hover);
 }

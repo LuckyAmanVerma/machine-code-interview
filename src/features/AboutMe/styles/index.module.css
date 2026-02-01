@@ -1,3 +1,4 @@
+@import '@/globalCSS/tokens/breakpoint.css';
 .aboutMe {
     padding: var(--space-gap-md);
     border-radius: 8px;
@@ -27,10 +28,25 @@
     -webkit-background-clip: text;
     -moz-background-clip: text;
     color: transparent;
-    filter:brightness(2)
+    filter: brightness(2)
 }
 
 .bigChar {
     font-size: var(--font-single-title);
-    
+
+}
+
+@media (--breakpoint-tablet) {
+    .aboutMe img {
+        float: none;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .aboutMe {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
