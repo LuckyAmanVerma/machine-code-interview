@@ -1,0 +1,37 @@
+.chipWrapper {
+    background-color:transparent;
+    list-style:none !important;
+    display:flex;
+    gap:var(--space-xs);
+}
+
+.chipWrapper li {
+    background-color:var(--color-primary);
+    filter:brightness(1.10);
+    font-size:var(--font-medium);
+    color:var(--color-text-primary);
+    border-radius:var(--space-xs);  
+    padding:var(--space-xs) !important;
+}
+
+.chipWrapper li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0.10rem;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0) brightness(1);
+}
+
+.chipWrapper li:hover::after,
+.chipWrapper li.active::after {
+    background-image:radial-gradient();
+  transform: scaleX(1) brightness(1.25);
+  transition: transform 0.3s ease;
+}
+
+.chipWrapper li:hover {
+    filter:brightness(1.25);
+    transition:filter 0.3s ease-in;
+}

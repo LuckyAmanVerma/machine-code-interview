@@ -33,7 +33,11 @@
 
 .bigChar {
     font-size: var(--font-single-title);
+}
 
+.position {
+    display:inline;
+    font-size:var(--font-xxlarge);
 }
 
 @media (--breakpoint-tablet) {

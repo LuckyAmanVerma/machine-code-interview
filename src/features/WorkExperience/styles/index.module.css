@@ -1,17 +1,18 @@
 @import '@/globalCSS/tokens/breakpoint.css';
 
-.aboutMe {
+.workExperience {
     padding: var(--space-gap-md);
     border-radius: 8px;
+    position:relative;
 }
 
-.aboutMe p {
+.workExperience p {
     font-size: 1rem;
     line-height: 1.5;
     text-align: justify;
 }
 
-.aboutMe img {
+.workExperience img {
     max-width: 100%;
     height: auto;
     border-radius: 50%;
@@ -32,30 +33,37 @@
     filter: brightness(2)
 }
 
-.aboutMe ul {
+.workExperience ul {
     padding: var(--space-sm);
     float: left;
     list-style:disc;
 }
 
-.aboutMe ul li {
+.workExperience ul li {
     padding: var(--space-sm);
 }
 
 .bigChar {
     font-size: var(--font-single-title);
-
+    font-weight:var(--font-weight-bold);
 }
 
+.chipContainer {
+    position:absolute;
+    right:var(--space-md);
+    top:var(--space-md);
+}
+
+
 @media (--breakpoint-tablet) {
-    .aboutMe img {
+    .workExperience img {
         float: none;
         position: relative;
         left: 50%;
         transform: translateX(-50%);
     }
 
-    .aboutMe {
+    .workExperience {
         display: flex;
         flex-direction: column;
         align-items: flex-start;

@@ -15,7 +15,9 @@ const Carousel = ({ children }: ICarouselProps) => {
                         className={`${styles.carousel_btn} ${index === page ? styles.active : ""}`}
                         onClick={() => setPage(index)}
                     >
-                        _
+                        <span className={styles.buttonContent}>
+                            {index + 1}
+                        </span>
                     </button>
                 </li>
             ))}
@@ -23,6 +25,7 @@ const Carousel = ({ children }: ICarouselProps) => {
         <ul >{
             items.map((component, index) =>
                 <li
+                    aria-label={`slide ${index} is ${index === page ? 'active' : "not-active"} `}
                     className={`${styles.slider} ${index === page ? styles.active : ""}`}
                     key={index}>{component}</li>)
         }</ul>

@@ -8,6 +8,10 @@
     --font-xlarge: 1.5rem;
     --font-xxlarge:2rem;
     --font-single-title:6rem;
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
 }
 
 body {

@@ -1,6 +1,6 @@
 import React from 'react';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
-import { NotFound,Home,FileExplorer } from '@/features';
+import { HashRouter as Router, Route, Routes,Navigate } from 'react-router-dom';
+import { NotFound,Home,FileExplorer,WorkExperience } from '@/features';
 import Navigation from '@/features/Navigation';
 import AboutMe from '@/features/AboutMe';
 
@@ -10,9 +10,10 @@ const App: React.FC = () => {
       <Navigation />
       <main style={{ paddingTop: '56px' }}>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Navigate to="/about-me" replace />} />
           <Route path="*" element={<NotFound />} />
           <Route path="/about-me" element={<AboutMe />} />
+           <Route path="/working-experience" element={<WorkExperience />} />
         </Routes>
       </main>
     </Router>
