@@ -11,6 +11,7 @@
 .moreBtn:focus {
   background: var(--color-fab-hover);
   outline: none;
+  box-shadow:0 0 4px 2px #fff, 0 0 4px 4px lightgrey
 }
 
 .moreBtn {
@@ -18,8 +19,8 @@
   height: 3rem;
   border-radius: 3rem;
   color: var(--color-fab-icon);
-  background-color: var(--color-fab-bg);
-  font-size: var(--font-large);
+  background-color: var(--color-border-hover);
+  font-size: var(--font-xxlarge);
   box-sizing: border-box;
   transition: box-shadow 0.2s ease;
   will-change: transform;

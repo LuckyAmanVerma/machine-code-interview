@@ -19,7 +19,8 @@ const Navigation: React.FC = ({children}: {children?: React.ReactNode}) => {
     <nav className={styles.navbar} aria-label="Main Navigation">
       <ul className={styles.navlist}>
         {sections.map((section) => (
-          <li key={section} className={selected === section ? styles.active : ''}>
+          <li key={section} className={selected === section ? styles.active : ''}
+          >
             <a
               href={`#${section.replace(/\s+/g, '-').toLowerCase()}`}
               onClick={() => setSelectedSection(section)}

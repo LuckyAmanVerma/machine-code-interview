@@ -1,0 +1,62 @@
+@import '@/globalCSS/tokens/breakpoint.css';
+
+.aboutMe {
+    padding: var(--space-gap-md);
+    border-radius: 8px;
+}
+
+.aboutMe p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.aboutMe img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    float: left;
+    margin: 0 15px 15px 0;
+}
+
+.imageBackground {
+    background-image: url('../../..//assets/coding-workspace.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+    filter: brightness(2)
+}
+
+.aboutMe ul {
+    padding: var(--space-sm);
+    float: left;
+}
+
+.aboutMe ul li {
+    padding: var(--space-sm);
+}
+
+.bigChar {
+    font-size: var(--font-single-title);
+
+}
+
+@media (--breakpoint-tablet) {
+    .aboutMe img {
+        float: none;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .aboutMe {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

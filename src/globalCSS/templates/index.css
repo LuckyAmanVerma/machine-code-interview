@@ -1,6 +1,6 @@
 @import "./navbar.css";
 body {
-    background-color:var(--color-app);
+    background-color:inherit;
     color:var(--color-text-primary);
 }
 
