@@ -6,4 +6,5 @@ export interface ICompanyDetail {
   techStack: string[];
   description: string;
   responsibilities: string[];
+  logo:string;
 }

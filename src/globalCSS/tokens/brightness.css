@@ -1,0 +1,18 @@
+
+:root {
+  /* Dimmed states (disabled, hover subtle) */
+  --brightness-dim: brightness(0.6);
+  --brightness-dim-med: brightness(0.75);
+  --brightness-dim-light: brightness(0.9);
+
+  /* Default/normal */
+  --brightness-default: brightness(1);
+
+  /* Brightened states (active, focus, emphasis) */
+  --brightness-bright: brightness(1.1);
+  --brightness-bright-med: brightness(1.25);
+  --brightness-bright-high: brightness(1.5);
+
+  /* Extreme (overexposure effects) */
+  --brightness-max: brightness(2);
+}

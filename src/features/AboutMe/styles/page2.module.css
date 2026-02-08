@@ -29,7 +29,7 @@
     -webkit-background-clip: text;
     -moz-background-clip: text;
     color: transparent;
-    filter: brightness(2)
+    filter: var(--brightness-max);
 }
 
 .aboutMe ul {

@@ -14,7 +14,7 @@
     color: var(--color-secondary);
     cursor: pointer;
     opacity: 1;
-    transform: scale(1) brightness(1);
+    transform: scale(1) var(--brightness-default);
     transition: background-color 0.3s ease;
 }
 
@@ -22,7 +22,7 @@
     background-color: var(--color-primary);
     color: var(--color-text-primary);
     animation: ease-in-out 1s;
-    transform:brightness(1.25);
+    transform:var(--brightness-bright);
     transition: background-color 0.3s ease brightness 0.3s ease;
 }
 

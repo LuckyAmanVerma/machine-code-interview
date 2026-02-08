@@ -30,7 +30,13 @@
     -webkit-background-clip: text;
     -moz-background-clip: text;
     color: transparent;
-    filter: brightness(2)
+    filter: var(--brightness-max);
+}
+
+.companyLogo {
+    width: 120px;
+    height: 150px;
+    margin-bottom: var(--space-sm);
 }
 
 .workExperience ul {
@@ -61,6 +67,7 @@
         position: relative;
         left: 50%;
         transform: translateX(-50%);
+        top: 3.25rem;
     }
 
     .workExperience {
@@ -68,4 +75,18 @@
         flex-direction: column;
         align-items: flex-start;
     }
+
+    .workExperience ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .chipContainer {
+        position: relative;
+        right: auto;
+        top: var(--space-md);
+    }
 }
+    

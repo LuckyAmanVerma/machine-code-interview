@@ -11,7 +11,7 @@ const CompanyDetails = ({ company }: { company: ICompanyDetail }) => {
       <span className={styles.chipContainer}>
         <ChipText data={company.techStack.map(techData => ({ key: techData, label: techData }))} />
       </span>
-      <img src={profilePic} width="200" alt="About Me" />
+      <img src={company.logo} className={styles.companyLogo} alt="Company Logo" />
       <a aria-label="company_link" title={`Go to ${company.company_url} `} 
       href={company.company_url} target="_blank" rel="noopener noreferrer">
         <h2>
