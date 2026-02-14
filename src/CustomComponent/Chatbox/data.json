@@ -1,0 +1,34 @@
+{
+  "messages": [
+    {
+      "id": "1",
+      "question": "Total Experience",
+      "answer": "<p>I have over <b>5 years</b> of professional experience in software development, specializing in building scalable and efficient applications. You can check my work on <a href='https://github.com/LuckyAmanVerma' target='_blank'>GitHub</a>.</p>"
+    },
+    {
+      "id": "2",
+      "question": "Experience in Frontend",
+      "answer": "<p>I have <b>7+ years</b> of experience in Frontend development, working extensively with <b>React.js</b>, <b>JavaScript</b>, and modern UI frameworks.</p>"
+    },
+    {
+      "id": "3",
+      "question": "Experience in Node.js",
+      "answer": "<p>I have <b>3 years</b> of experience in backend development using <b>Node.js</b>, building <a href='https://nodejs.org/' target='_blank'>RESTful APIs</a> and microservices.</p>"
+    },
+    {
+      "id": "4",
+      "question": "Experience Details",
+      "answer": "<p>Here is a summary of my professional experience:</p><ul><li><b>2019 - 2022:</b> Netlink Solution Pvt Limited, <b>Full Stack Developer</b> (React.js, Node.js, MongoDB)</li><li><b>2022 - 2024:</b> Accenture, <b>Senior Frontend Developer</b> (React.js, Next.js, TypeScript)</li><li><b>2024 - Present:</b> LTIMindtree, <b>Senior Product Engineer</b> (React.js, TypeScript)</li></ul>"
+    },
+    {
+      "id": "5",
+      "question": "Current Company",
+      "answer": "<p>I am currently working at <b>LTIMindtree</b> as a <b>Senior Product Engineer</b>, focusing on frontend system design and scalable application development.</p>"
+    },
+    {
+      "id": "6",
+      "question": "Frontend Architecture and Design Patterns",
+      "answer": "<p>My approach to frontend architecture emphasizes scalability and maintainability. Key aspects include:</p><ul><li><b>Atomic Design:</b> Creating reusable components to ensure consistency across the application.</li><li><b>Feature-based Design:</b> Organizing code by functionality for easier management and scalability.</li><li><b>SOLID Principles:</b> Writing clean, modular, and testable code.</li><li><b>Design Patterns:</b> Leveraging patterns like Container-Presenter, Observer, and Factory to enhance code reusability and maintain a clear separation of concerns.</li></ul>"
+    }
+  ]
+}

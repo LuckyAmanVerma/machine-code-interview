@@ -1,0 +1,38 @@
+.answerContainer {
+  background-color: var(--color-bg-primary);
+  padding: var(--space-md);
+  border-radius: var(--space-xs);
+  box-shadow: 0 var(--space-sm) var(--space-md) rgba(0, 0, 0, var(--brightness-dim));
+  color: var(--color-text-primary);
+  text-align: left;
+  font-size: var(--font-medium);
+  line-height: 1.6;
+}
+
+.answerContainer p {
+  margin-bottom: var(--space-sm);
+}
+
+.answerContainer b {
+  font-weight: var(--font-weight-bold);
+}
+
+.answerContainer a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.answerContainer a:hover {
+  color: var(--color-primary-hover);
+}
+
+.answerContainer ul {
+  list-style: disc;
+  padding-left: var(--space-lg);
+  margin-bottom: var(--space-sm);
+}
+
+.answerContainer li {
+  margin-bottom: var(--space-xs);
+}

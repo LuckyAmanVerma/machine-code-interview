@@ -4,6 +4,7 @@ import { NotFound, Home, FileExplorer, WorkExperience } from '@/features';
 import Navigation from '@/features/Navigation';
 import AboutMe from '@/features/AboutMe';
 import { AnimatePresence, motion, Transition } from "framer-motion";
+import Chatbox from "@/CustomComponent/Chatbox";
 const pageVariants = {
   initial: { opacity: 0, scale: 0.995 },
   animate: { opacity: 1, scale: 1 },
@@ -49,6 +50,7 @@ const App: React.FC = () => {
           </Routes>
         </AnimatePresence>
       </main>
+      <Chatbox />
     </Router>
   );
 };

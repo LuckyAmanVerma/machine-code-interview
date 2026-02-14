@@ -34,7 +34,7 @@ const companyData = [
         ]
     },
     {
-        company_name: "Netlnk Solutions Pvt Ltd",
+        company_name: "Netlink Solutions Pvt Ltd",
         company_url: "https://netlink.com/",
         position: "Software Engineer (Associate to Senior)",
         duration: "January 2019 - January 2022",

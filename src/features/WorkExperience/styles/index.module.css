@@ -1,57 +1,70 @@
 @import '@/globalCSS/tokens/breakpoint.css';
 
-.workExperience {
-    padding: var(--space-gap-md);
-    border-radius: 8px;
-    position:relative;
-}
-
-.workExperience p {
-    font-size: 1rem;
-    line-height: 1.5;
-    text-align: justify;
-}
-
-.workExperience img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    float: left;
-    margin: 0 15px 15px 0;
-}
-
-.imageBackground {
-    background-image: url('../../..//assets/coding-workspace.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    color: transparent;
-    filter: var(--brightness-max);
+:root {
+    --company-logo-size: 7.5rem;
 }
 
 .companyLogo {
-    width: 120px;
-    height: 150px;
-    margin-bottom: var(--space-sm);
+   width: var(--company-logo-size);
+   height: var(--company-logo-size);
+   border-radius: var(--company-logo-size);
 }
 
-.workExperience ul {
-    padding: var(--space-sm);
-    float: left;
-    list-style:disc;
+.workExperience {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: var(--space-gap-md);
+  padding: var(--space-md);
 }
 
-.workExperience ul li {
-    padding: var(--space-sm);
+.topContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center; 
+  gap: var(--space-md);
 }
 
-.bigChar {
-    font-size: var(--font-single-title);
-    font-weight:var(--font-weight-bold);
+.leftAlign {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-sm);
+}
+
+.rightAlign {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: flex-end;
+  gap: var(--space-xs);
+}
+
+.responsibilitiesList {
+  display: grid;
+  gap: var(--space-sm);
+  padding-left: var(--space-md);
+  list-style: disc;
+}
+
+.responsibilityItem {
+  line-height: 1.6;
+  font-size: var(--font-medium);
+  color: var(--color-text-secondary);
+  position: relative;
+}
+
+.duration b {
+    color:var(--color-primary);
+}
+
+
+.responsibilityItem::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
 }
 
 .chipContainer {
@@ -61,13 +74,16 @@
 }
 
 
+
 @media (--breakpoint-tablet) {
+    .topContainer {
+    grid-template-columns: 1fr;
+    text-align: center; 
+  }
+
     .workExperience img {
         float: none;
         position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 3.25rem;
     }
 
     .workExperience {
@@ -88,5 +104,8 @@
         right: auto;
         top: var(--space-md);
     }
+
+    .rightAlign,.leftAlign {
+        align-items: center;
+    }
 }
-    
