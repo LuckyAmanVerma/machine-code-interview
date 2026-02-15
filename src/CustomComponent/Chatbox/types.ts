@@ -1,10 +1,13 @@
-export interface ChatMessage {
+export interface Message {
   id: string;
-  question: string;
-  answer: string;
+  role: "user" | "assistant";
+  content: string;
+  timestamp: Date;
 }
 
 export interface ChatboxState {
   isOpen: boolean;
-  selectedId: string | null;
+  messages: Message[];
+  isLoading: boolean;
+  error: string | null;
 }
