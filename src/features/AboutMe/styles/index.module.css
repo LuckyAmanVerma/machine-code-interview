@@ -40,6 +40,53 @@
     font-size:var(--font-xxlarge);
 }
 
+.contactSection {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    clear: both;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contactTitle {
+    font-size: var(--font-large);
+    margin-bottom: 15px;
+    color: inherit;
+}
+
+.contactLinks {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contactLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.contactLink:hover {
+    border-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.05);
+    transform: translateY(-2px);
+}
+
+.contactIcon {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
 @media (--breakpoint-tablet) {
     .aboutMe img {
         float: none;
@@ -52,5 +99,14 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .contactLinks {
+        flex-direction: column;
+    }
+
+    .contactLink {
+        width: 100%;
+        justify-content: center;
     }
 }

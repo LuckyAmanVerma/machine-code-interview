@@ -26,8 +26,8 @@
 
 .leftAlign {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row;
+  align-items: center;
   gap: var(--space-sm);
 }
 
@@ -43,8 +43,8 @@
   display: grid;
   gap: var(--space-sm);
   padding-left: var(--space-md);
-  list-style: disc;
 }
+
 
 .responsibilityItem {
   line-height: 1.6;
@@ -59,12 +59,11 @@
 
 
 .responsibilityItem::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
+  content: "▶";
+  position: relative;
   transform: translateY(-50%);
-
+  margin-right: 5px;
+  color: var(--color-primary);
 }
 
 .chipContainer {

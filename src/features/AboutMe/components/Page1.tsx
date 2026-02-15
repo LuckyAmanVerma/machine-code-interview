@@ -12,6 +12,28 @@ const Page1: React.FC = () => {
 <p>
   Outside of engineering, I enjoy mentoring teams, exploring new technologies, and refining processes that balance technical depth with user-centric design.
 </p>
+
+<div className={styles.contactSection}>
+  <h3 className={styles.contactTitle}>Get in Touch</h3>
+  <div className={styles.contactLinks}>
+    <a href="mailto:luckyamanverma@gmail.com" className={styles.contactLink}>
+      <span className={styles.contactIcon}>✉</span>
+      Email
+    </a>
+    <a href="https://github.com/LuckyAmanVerma" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
+      <span className={styles.contactIcon}>⚙</span>
+      GitHub
+    </a>
+    <a href="https://drive.google.com/file/d/1UkcMarKJ3RD1wf9zpoaUSS8fUk5F_SXJ/view" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
+      <span className={styles.contactIcon}>📄</span>
+      Resume
+    </a>
+    <a href="https://www.linkedin.com/in/aman-verma-bb6806141/" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
+      <span className={styles.contactIcon}>&#128712;</span>
+      LinkedIn
+    </a>
+  </div>
+</div>
     </section>
   );
 };
