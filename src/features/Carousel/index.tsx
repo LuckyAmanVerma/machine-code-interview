@@ -7,7 +7,7 @@ const Carousel = ({ children }: ICarouselProps) => {
     const items = React.Children.toArray(children);
     return <section style={{ marginTop: "var(--space-xs)" }} aria-label="Page Carousel">
         <ul className={styles.buttonWrapper}>
-            {items.map((component, index) => (
+            {items.map((_component, index) => (
                 <li key={index}>
                     <button
                         title={'Page ' + (index + 1).toString()}

@@ -1,4 +1,6 @@
 # AI Coding Agent Instructions: Machine Code Interview
+When ever you are generating a new jsx , html related code make sure it follow all the acccesibility guidelines and best practices. Always use semantic HTML elements and ensure that all interactive elements are keyboard accessible. Use ARIA attributes where necessary to enhance accessibility for screen readers. Additionally, ensure that color contrast ratios meet WCAG guidelines for readability.
+FOr CSS related , first refer the globalCSS/ folder that follow ATOMIC design , if you need to add any new color , font , spacing , media query etc update it there and use the defined variables in your component styles. Always prefer using CSS Modules for component-specific styles to avoid global namespace pollution. When writing CSS, follow the BEM naming convention for class names to maintain consistency and readability across the codebase.
 
 ## Project Overview
 React + TypeScript SPA built with Vite for practicing coding interviews. Uses React Router for navigation and CSS Modules for styling.

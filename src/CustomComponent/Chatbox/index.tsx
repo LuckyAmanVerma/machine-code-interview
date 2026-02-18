@@ -13,6 +13,10 @@ const Chatbox = () => {
   const RAG_API_URL =
     "https://aman-portfolio-ai-server.onrender.com/api/chat";
 
+  const CHATBOX_ID = "chatbox-chat";
+  const CHATBOX_TITLE_ID = "chatbox-title";
+  const inputRef = useRef<HTMLInputElement>(null);
+
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   };
@@ -23,6 +27,18 @@ const Chatbox = () => {
 
   const toggleChatbox = () => {
     setIsOpen(!isOpen);
+  };
+
+  useEffect(() => {
+    if (isOpen) {
+      setTimeout(() => inputRef.current?.focus(), 0);
+    }
+  }, [isOpen]);
+
+  const handleChatboxKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === "Escape") {
+      setIsOpen(false);
+    }
   };
 
   const validateInput = (text: string): boolean => {
@@ -103,14 +119,27 @@ const Chatbox = () => {
 
   return (
     <div className={styles.chatboxContainer}>
-      <button className={styles.chatboxToggle} onClick={toggleChatbox}>
+      <button
+        className={styles.chatboxToggle}
+        onClick={toggleChatbox}
+        aria-label={isOpen ? "Close chat" : "Open chat"}
+        aria-expanded={isOpen}
+        aria-controls={CHATBOX_ID}
+      >
         💬
       </button>
 
       {isOpen && (
-        <div className={styles.chatbox}>
+        <div
+          className={styles.chatbox}
+          id={CHATBOX_ID}
+          role="dialog"
+          aria-modal="false"
+          aria-labelledby={CHATBOX_TITLE_ID}
+          onKeyDown={handleChatboxKeyDown}
+        >
           <div className={styles.chatHeader}>
-            <h5>Ask About Aman</h5>
+            <h5 id={CHATBOX_TITLE_ID}>Ask About Aman</h5>
             <button
               className={styles.closeBtn}
               onClick={toggleChatbox}
@@ -120,7 +149,12 @@ const Chatbox = () => {
             </button>
           </div>
 
-          <div className={styles.messagesContainer}>
+          <div
+            className={styles.messagesContainer}
+            role="log"
+            aria-live="polite"
+            aria-relevant="additions"
+          >
             {messages.length === 0 ? (
               <div className={styles.welcomeMessage}>
                 <p>👋 Hello! Ask me anything about my experience, skills, or projects.</p>
@@ -130,10 +164,12 @@ const Chatbox = () => {
                 <div
                   key={message.id}
                   className={`${styles.messageWrapper} ${
-                    message.role === "user"
-                      ? styles.userMessage
-                      : styles.assistantMessage
+                    message.role === "user" ? styles.userMessage : styles.assistantMessage
                   }`}
+                  role="article"
+                  aria-label={
+                    message.role === "user" ? "User message" : "Assistant message"
+                  }
                 >
                   <div className={styles.message}>
                     {message.content}
@@ -157,16 +193,22 @@ const Chatbox = () => {
 
           <div className={styles.inputSection}>
             {validationError && (
-              <div className={styles.errorMessage}>{validationError}</div>
+              <div id="chat-validation-error" className={styles.errorMessage} role="alert">
+                {validationError}
+              </div>
             )}
             <form onSubmit={handleSendMessage} className={styles.inputForm}>
               <input
+                ref={inputRef}
                 type="text"
                 value={inputValue}
                 onChange={handleInputChange}
                 placeholder="Ask about my experience..."
                 className={styles.inputField}
                 disabled={isLoading}
+                aria-invalid={validationError ? true : false}
+                aria-describedby={validationError ? "chat-validation-error" : undefined}
+                aria-label="Message input"
               />
               <button
                 type="submit"
