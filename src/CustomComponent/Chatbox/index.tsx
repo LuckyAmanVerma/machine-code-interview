@@ -60,9 +60,21 @@ const Chatbox = () => {
     }
   };
 
+  const checkRateLimit = (): boolean => {
+    // client side reate limit  max 5 messages per hour , if user exceed the limit show error message and return true
+    const messagesSent = messages.filter(
+      (msg) => msg.role === "user" && (new Date().getTime() - msg.timestamp.getTime()) < 60 * 60 * 1000
+    ).length;
+    if (messagesSent >= 5) {
+      alert("You have reached the maximum of 5 messages per hour. Please try again later.");
+      return true;
+    }
+    return false;
+  }
+
   const handleSendMessage = async (e: React.FormEvent) => {
     e.preventDefault();
-
+    if(checkRateLimit()) return false;
     if (!validateInput(inputValue)) {
       return;
     }
