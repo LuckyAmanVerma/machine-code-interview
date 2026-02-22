@@ -63,7 +63,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--space-lg);
+  padding: var(--space-md);
   border-bottom: 1px solid var(--color-bg-muted);
   background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
   color: var(--color-text-light);
@@ -89,11 +89,14 @@
   justify-content: center;
   transition: transform 0.2s ease;
   opacity: 0.8;
+  color:var(--color-danger);
 }
 
 .closeBtn:hover {
   opacity: 1;
   transform: rotate(90deg);
+  transition:transform 0.2s ease-in;
+  color:var(--color-danger-hover);
 }
 
 .messagesContainer {

@@ -41,8 +41,7 @@
 }
 
 .contactSection {
-    margin-top: 30px;
-    padding-top: 20px;
+    padding-top: var(--space-xs);
     border-top: 2px solid rgba(255, 255, 255, 0.1);
     clear: both;
     position: relative;
@@ -65,19 +64,20 @@
 .contactLink {
     display: inline-flex;
     align-items: center;
+    background-color:var(--color-chip-bg);
     gap: 8px;
     padding: 10px 15px;
     text-decoration: none;
-    color: inherit;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--color-chip-text);
+    border: 1px solid var(--color-chip-text);
     border-radius: 6px;
     transition: all 0.3s ease;
-    font-weight: 500;
+    font-weight: var(--font-weight-bold);
 }
 
 .contactLink:hover {
-    border-color: rgba(255, 255, 255, 0.6);
-    background-color: rgba(255, 255, 255, 0.05);
+    border-color: var(--color-text-primary);
+    color:var(--color-text-primary);
     transform: translateY(-2px);
 }
 

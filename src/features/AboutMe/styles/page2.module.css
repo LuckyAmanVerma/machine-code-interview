@@ -38,7 +38,16 @@
     list-style:disc;
 }
 
+.aboutMe ul li::before  {
+    content: "▶";
+    position: relative;
+    transform: translateY(-50%);
+    margin-right: 5px;
+    color: var(--color-primary);
+}
+
 .aboutMe ul li {
+    list-style: none;
     padding: var(--space-sm);
 }
 

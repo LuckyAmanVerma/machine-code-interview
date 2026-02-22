@@ -15,6 +15,8 @@
   grid-template-rows: auto auto auto;
   gap: var(--space-gap-md);
   padding: var(--space-md);
+  border:1px solid var(--color-border-hover);
+  border-radius:0.5rem;
 }
 
 .topContainer {
@@ -22,6 +24,10 @@
   grid-template-columns: 1fr 1fr;
   align-items: center; 
   gap: var(--space-md);
+}
+
+.companyPosition {
+  color:var(--color-text-secondary);
 }
 
 .leftAlign {

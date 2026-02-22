@@ -16,6 +16,7 @@ const CompanyDetails = ({ company }: { company: ICompanyDetail }) => {
             <h2 className={styles.companyName}>
               {company.company_name}
             </h2>
+            <p className={styles.companyPosition}>{company.position}</p>
           </a>
         </section>
 

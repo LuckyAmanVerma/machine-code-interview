@@ -14,22 +14,47 @@ const Page1: React.FC = () => {
 </p>
 
 <div className={styles.contactSection}>
+  <h3 className={styles.contactTitle}>Core Expertise</h3>
+  <div className={styles.contactLinks}>
+    <a href="#" className={styles.contactLink}>
+      Frontend Architecture 
+    </a>
+    <a href="#" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
+      React.js
+    </a>
+    <a href="#" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
+      Node.js
+    </a>
+    <a href="#" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
+      Typescript
+    </a>
+    <a href="#" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
+      System Design
+    </a>
+  </div>
+</div>
+
+<div className={styles.contactSection}>
   <h3 className={styles.contactTitle}>Get in Touch</h3>
   <div className={styles.contactLinks}>
     <a href="mailto:luckyamanverma@gmail.com" className={styles.contactLink}>
-      <span className={styles.contactIcon}>✉</span>
+      <span className={styles.contactIcon}><i className="fa-regular fa-envelope"></i></span>
       Email
     </a>
     <a href="https://github.com/LuckyAmanVerma" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
-      <span className={styles.contactIcon}>⚙</span>
+      <span className={styles.contactIcon}>
+       <i className="fa-brands fa-github"></i>
+       </span>
       GitHub
     </a>
     <a href="https://drive.google.com/file/d/1UkcMarKJ3RD1wf9zpoaUSS8fUk5F_SXJ/view" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
-      <span className={styles.contactIcon}>📄</span>
+      <span className={styles.contactIcon}><i className="fa-regular fa-file"></i></span>
       Resume
     </a>
     <a href="https://www.linkedin.com/in/aman-verma-bb6806141/" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
-      <span className={styles.contactIcon}>&#128712;</span>
+      <span className={styles.contactIcon}>
+        <i className="fa-brands fa-linkedin-in"></i>
+      </span>
       LinkedIn
     </a>
   </div>
