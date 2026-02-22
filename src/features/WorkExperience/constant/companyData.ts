@@ -8,7 +8,7 @@ const companyData = [
         company_url: "https://www.ltimindtree.com/",
         position: "Senior Product Engineer",
         duration: "February 2024 - Present",
-        techStack: ["JavaScript","TypeScript", "React.js","Redux","System Design"],
+        techStack: ["JavaScript","TypeScript", "React.js","Redux","Architectural Design"],
         description: "Worked as a Senior Product Engineer, refactoring large-scale legacy React applications to make them scalable and maintainable. Architected the frontend design system and application structure to support modular development and future scalability. ",
         logo:LTIMindtreeLogo,
         responsibilities: [
