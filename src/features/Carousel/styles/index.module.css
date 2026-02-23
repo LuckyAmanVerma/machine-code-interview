@@ -42,6 +42,7 @@
     opacity: 1;
     pointer-events: auto;
     animation: flutter 0.3s ease-in forwards;
+    padding:var(--space-xs);
 }
 
 .buttonContent {

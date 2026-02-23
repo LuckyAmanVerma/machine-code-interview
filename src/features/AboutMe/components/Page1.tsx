@@ -6,7 +6,8 @@ const Page1: React.FC = () => {
     <section className={styles.aboutMe} id="about-me">
         <img src={profilePic} width="200" alt="About Me" />
           <h2><span className={`${styles.bigChar} ${styles.imageBackground}`} >Hi</span>, I'm Aman Verma</h2>
-  <h2 className={styles.position}>Senior Software Engineer</h2> with 7+ years of experience building scalable, high-performance web applications. I specialize in frontend system design, focusing on clean UI architecture, performance optimization, and maintainable component systems. I enjoy working at scale, driving architectural decisions, and delivering user-centric products that last.
+  <h2 className={styles.position}>Senior Software Engineer</h2>
+  <span className={styles.description}> with 7+ years of experience building scalable, high-performance web applications. I specialize in frontend system design, focusing on clean UI architecture, performance optimization, and maintainable component systems. I enjoy working at scale, driving architectural decisions, and delivering user-centric products that last.</span>
 
 
 <p>
@@ -16,19 +17,19 @@ const Page1: React.FC = () => {
 <div className={styles.contactSection}>
   <h3 className={styles.contactTitle}>Core Expertise</h3>
   <div className={styles.contactLinks}>
-    <a href="#" className={styles.contactLink}>
+    <a className={styles.contactLink}>
       Frontend Architecture 
     </a>
-    <a href="#" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
+    <a  className={styles.contactLink}>
       React.js
     </a>
-    <a href="#" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
+    <a  className={styles.contactLink}>
       Node.js
     </a>
-    <a href="#" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
+    <a  className={styles.contactLink}>
       Typescript
     </a>
-    <a href="#" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
+    <a  className={styles.contactLink}>
       System Design
     </a>
   </div>

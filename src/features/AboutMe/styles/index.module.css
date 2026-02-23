@@ -1,13 +1,13 @@
 @import '@/globalCSS/tokens/breakpoint.css';
 .aboutMe {
-    padding: var(--space-gap-md);
+    margin:0 var(--space-gap-sm);
     border-radius: 8px;
 }
 
 .aboutMe p {
     font-size: 1rem;
     line-height: 1.5;
-    text-align: justify;
+    text-align: start;
 }
 
 .aboutMe img {
@@ -41,12 +41,8 @@
 }
 
 .contactSection {
-    padding-top: var(--space-xs);
+    padding: var(--space-gap-md) 0;
     border-top: 2px solid rgba(255, 255, 255, 0.1);
-    clear: both;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .contactTitle {
@@ -87,6 +83,10 @@
     align-items: center;
 }
 
+.description {
+    line-height:1.5rem;
+}
+
 @media (--breakpoint-tablet) {
     .aboutMe img {
         float: none;
@@ -106,7 +106,15 @@
     }
 
     .contactLink {
-        width: 100%;
+        flex:1;
         justify-content: center;
     }
+
+    .contactSection {
+    width:100%
+}
+
+.contactTitle {
+    text-align:center;
+}
 }
