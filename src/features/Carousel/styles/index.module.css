@@ -34,7 +34,6 @@
     pointer-events: none;
     transition: opacity 0.3s ease;
     position:absolute;
-    margin-top:var(--space-xs);
     
 }
 
@@ -42,7 +41,7 @@
     opacity: 1;
     pointer-events: auto;
     animation: flutter 0.3s ease-in forwards;
-    padding:var(--space-xs);
+    padding:0 var(--space-xs);
 }
 
 .buttonContent {

@@ -1,7 +1,7 @@
 @import '@/globalCSS/tokens/breakpoint.css';
 
 .aboutMe {
-    padding: var(--space-gap-md);
+    padding:0 var(--space-gap-md);
     border-radius: 8px;
 }
 

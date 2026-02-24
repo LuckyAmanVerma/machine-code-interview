@@ -15,6 +15,7 @@
   grid-template-rows: auto auto auto;
   gap: var(--space-gap-md);
   padding: var(--space-md);
+  margin-top:var(--space-xs);
   border:1px solid var(--color-border-hover);
   border-radius:0.5rem;
   box-shadow:0px 0px 5px 5px var(--color-fab-bg);
