@@ -106,7 +106,7 @@ const Chatbox = () => {
       const assistantMessage: Message = {
         id: `assistant-${Date.now()}`,
         role: "assistant",
-        content: data.success
+        content: data.reply
           ? data.reply
           : data.error || "Sorry, I couldn't process your request. Please try again.",
         timestamp: new Date(),
