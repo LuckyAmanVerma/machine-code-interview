@@ -8,15 +8,15 @@ const companyData = [
         company_url: "https://www.ltimindtree.com/",
         position: "Senior Product Engineer",
         duration: "February 2024 - Present",
-        techStack: ["JavaScript","TypeScript", "React.js","Redux","Architectural Design"],
+        techStack: [ "React.js","Javascript","Typescript","Node.js","RAG (Langchain,VectorDB)"],
         description: "Worked as a Senior Product Engineer, refactoring large-scale legacy React applications to make them scalable and maintainable. Architected the frontend design system and application structure to support modular development and future scalability. ",
         logo:LTIMindtreeLogo,
         responsibilities: [
+            "Built a RAG-powered ChatBox using LangChain and Vector DB over Honeywell knowledge bases, and integrated it into the existing React application for context-aware, efficient response retrieval.",
             "Owned frontend system design at scale, making architectural trade-offs across performance, scalability, and developer experience, and setting standards adopted across teams.",
             "Designed and implemented the frontend architecture, establishing scalable patterns, modular design, and best practices to support long-term product growth and faster feature development",
             "Collaborated closely with product managers, designers, and backend teams to deliver high-quality features, ensure architectural consistency, and improve overall development efficiency.",
             "Applied frontend system design principles to build scalable React architectures with well-defined component structure, state management, and data flow",
-            "Create the ChatBox component using Honeywell Knowledge bases and integrated it with the existing React application, ensuring seamless user experience and efficient data retrieval.",
         ]
     },
     {
@@ -24,7 +24,7 @@ const companyData = [
         company_url: "https://www.accenture.com/",
         position: "Senior Analyst",
         duration: "February 2022 - February 2024",
-        techStack: ["JavaScript","TypeScript", "React.js", "Jest", "Redux"],
+        techStack: ["React.js","Javascript","TypeScript"],
         description: "Worked as a Senior Analyst (Frontend), building and optimizing enterprise-grade web applications with React.js and JavaScript, driving state management architecture, and improving UI reliability through Jest testing to deliver maintainable, high-quality frontend solutions.",
         logo:AccentureLogo,
         responsibilities: [
@@ -46,7 +46,8 @@ const companyData = [
             "Developed and maintained web applications using React.js for front-end and Node.js with Express.js for back-end.",
             "Optimized application performance by identifying and resolving bottlenecks, resulting in a 20% increase in load times.",
             "Implemented responsive design principles to ensure applications were mobile-friendly and accessible across various devices.",
-            "Use technique like code splitting and lazy loading to improve application performance.",
+            "Designed interactive dashboards using Highcharts.js and D3.js to visualize large data sets with clear business insights.",
+            "Applied code splitting and lazy loading techniques to improve application performance.",
         ]
     },
 
